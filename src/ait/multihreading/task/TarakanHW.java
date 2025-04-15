@@ -1,12 +1,21 @@
 package ait.multihreading.task;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class TarakanHW {
-    private static final int MAX = 10;
-    private static final int SIZE = 5;
+//    private static final int MAX = 10;
+//    private static final int SIZE = 5;
 
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter number of tarakans");
+        int SIZE = scanner.nextInt();
+
+        System.out.println("Enter distance of race");
+        int MAX = scanner.nextInt();
 
         Runnable[] tasks = new Runnable[SIZE];
 
