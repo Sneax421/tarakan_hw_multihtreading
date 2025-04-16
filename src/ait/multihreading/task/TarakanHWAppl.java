@@ -1,11 +1,9 @@
 package ait.multihreading.task;
 
-import java.util.Random;
 import java.util.Scanner;
 
-public class TarakanHW {
-//    private static final int MAX = 10;
-//    private static final int SIZE = 5;
+public class TarakanHWAppl {
+
 
     public static void main(String[] args) {
 
@@ -32,5 +30,6 @@ public class TarakanHW {
             threads[i].start();
 
         }
+        scanner.close();
     }
 }

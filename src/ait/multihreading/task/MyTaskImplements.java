@@ -16,6 +16,7 @@ public class MyTaskImplements implements Runnable{
 
     @Override
     public void run() {
+        System.out.println(name + "task is started");
         for (int i = 0; i < max; i++) {
             try {
                 Thread.sleep(MILLI);
@@ -24,10 +25,13 @@ public class MyTaskImplements implements Runnable{
             }
             System.out.println(name + ", count = " + i);
         }
+
+        System.out.println(name + " task is finished");
         if (winner == null) {
             winner = name;
             System.out.println("Congratulations to " + winner + " (winner)");
         }
+
 
     }
 }
